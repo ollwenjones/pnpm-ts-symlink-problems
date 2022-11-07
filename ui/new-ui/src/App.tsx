@@ -5,7 +5,8 @@ import { IIncrementArg } from "@sj-test/server-api/IIncrementArg";
 function App() {
   const [count, setCount] = useState(0);
   const onIncrement = () => {
-    const arg: IIncrementArg = {in:count, by: 1};
+    // error here, because symlinks break, "by" is not inherited
+    const arg: IIncrementArg = {in:count, by: 1}; 
     setCount(increment(arg).out);
   };
   return (
