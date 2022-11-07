@@ -1,0 +1,10 @@
+// uses a separate config for build vs edit, to avoid nesting of /generated and copying that around.
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@sj-test/server-api/*": ["generated/*"]
+    }
+  },
+  "include": ["./generated/**/*.ts"]
+}

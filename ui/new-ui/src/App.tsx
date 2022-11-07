@@ -1,23 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import  { useState } from 'react';
+import { increment } from "@sj-test/server-api/increment";
+import { IIncrementArg } from "@sj-test/server-api/IIncrementArg";
 
 function App() {
+  const [count, setCount] = useState(0);
+  const onIncrement = () => {
+    const arg: IIncrementArg = {in:count, by: 1};
+    setCount(increment(arg).out);
+  };
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <i className='App-logo'></i>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {count}
+      <button onClick={onIncrement}>Increment</button>
       </header>
     </div>
   );

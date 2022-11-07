@@ -1,0 +1,9 @@
+{
+    "name": "@sj-test/server-api",
+    "version": "1.0.0",
+    "description": "Compiled Typescript modules for communicating with Decisions Services",
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
+  

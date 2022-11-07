@@ -1,0 +1,6 @@
+# Ignore everything in this directory
+*
+# Except a few specific files
+!.gitignore
+# nested package.json beause Typscript still doesn't support package.json exports in "node" moduleReolution
+!package.json

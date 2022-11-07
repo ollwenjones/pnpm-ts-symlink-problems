@@ -1,0 +1,24 @@
+{
+  "name": "@sj-test/server-api-src",
+  "version": "1.0.0",
+  "description": "",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "clean": "rimraf \"lib/**/!(.gitignore|package.json)\"",
+    "build": "pnpm run clean && tsc -p tsconfig-build.json"
+  },
+  "exports": {
+    ".": "./lib",
+    "./*": "./lib/*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "fs-extra": "^9.1.0",
+    "rimraf": "^3.0.2",
+    "typescript": "4.7.4"
+  }
+}
