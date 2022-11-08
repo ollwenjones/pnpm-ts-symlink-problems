@@ -2,5 +2,4 @@ packages:
   # all packages in direct subdirs of UI/
   - 'ui/*'
   - 'ui/old-ui/*'
-  - 'ui/new-ui.generated-ts/lib'
   # we have some others, but not relevant to this exercise

@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "baseUrl": ".",
     "lib": [
       "dom",
       "dom.iterable",
@@ -19,7 +20,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "@sj-test/server-api/*": ["./node_modules/@sj-test/server-api/*"]
+    }
   },
   "include": [
     "src"

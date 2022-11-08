@@ -22,7 +22,7 @@ importers:
       web-vitals: ^2.1.4
     dependencies:
       '@sj-test/old-ui-styles': link:../old-ui/some-resource
-      '@sj-test/server-api': link:../new-ui.generated-ts/lib
+      '@sj-test/server-api': link:../server-api
       '@testing-library/jest-dom': 5.16.5
       '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
       '@testing-library/user-event': 13.5.0
@@ -49,10 +49,10 @@ importers:
       rimraf: 3.0.2
       typescript: 4.7.4
 
-  ui/new-ui.generated-ts/lib:
+  ui/old-ui/some-resource:
     specifiers: {}
 
-  ui/old-ui/some-resource:
+  ui/server-api:
     specifiers: {}
 
 packages:
