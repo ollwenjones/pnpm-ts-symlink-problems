@@ -1,6 +1,6 @@
 {
-    "name": "@sj-test/server-apis",
-    "version": "1.0.0",
+    "name": "@sj-test/server-api",
+    "version": "1.0.1",
     "description": "Compiled Typescript modules for communicating with Decisions Services",
     "keywords": [],
     "author": "",

@@ -1,6 +1,6 @@
 {
   "name": "@sj-test/server-api-src",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "files": [
     "lib/**/*"

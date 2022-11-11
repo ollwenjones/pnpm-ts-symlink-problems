@@ -3,7 +3,7 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
-    "outDir": "../server-api",
+    "outDir": "./lib",
     "paths": {
       "@sj-test/server-api/*": ["generated/*"]
     }

@@ -24,6 +24,14 @@
     ```
     - Why is the App build even type-checking tests?
 
+#### Workaround:
+Turns out the fix/workaround for this is just adding this to the consuming project's paths array.
+
+```json
+"paths": {
+    "@sj-test/server-api/*": ["./node_modules/@sj-test/server-api/*"]
+}
+```
 
 ### Webpack paths
 
